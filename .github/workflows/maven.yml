@@ -15,3 +15,10 @@ jobs:
       - name: test
         run: |
           echo "${{vars.DEPI}}"
+  test:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: test
+        run: |
+          echo "${{vars.DEPI}}"
