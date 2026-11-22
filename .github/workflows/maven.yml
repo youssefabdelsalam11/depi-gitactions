@@ -1,15 +1,16 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
-  echo:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: test
-      run: |
-        echo ${{ vars.testOne }}
+      - name: test
+        run: |
+          echo "Test ya youssef"
