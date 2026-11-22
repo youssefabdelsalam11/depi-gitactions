@@ -10,7 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: dev
     steps:
       - name: test
         run: |
-          echo "Test ya youssef"
+          echo "${{var.DEPI}}"
